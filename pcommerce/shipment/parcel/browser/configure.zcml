@@ -1,0 +1,40 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="pcommerce">
+
+  <browser:view
+      for="..interfaces.IParcelShipment"
+      class=".shipment.ParcelShipment"
+      name="shipment"
+      permission="pcommerce.CheckOut"
+      provides="pcommerce.core.interfaces.IShipmentView"
+      />
+      
+  <browser:view
+      for="..interfaces.IParcelShipment"
+      class=".overview.ParcelOverview"
+      name="overview"
+      permission="pcommerce.CheckOut"
+      provides="pcommerce.core.interfaces.IShipmentView"
+      />
+      
+  <browser:view
+      for="..interfaces.IParcelShipment"
+      class=".confirmation.ParcelConfirmation"
+      name="confirmation"
+      permission="pcommerce.CheckOut"
+      provides="pcommerce.core.interfaces.IShipmentView"
+      />
+
+  <browser:resource
+      name="pcommerce_shipment_parcel_icon.png"
+      image="icon.png"
+      />
+
+  <browser:resource
+      name="pcommerce_shipment_parcel_logo.png"
+      image="logo.png"
+      />
+  
+</configure>
