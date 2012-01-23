@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.0b3 (Unreleased)
+1.0b3 (2012-01-23)
 ------------------
 
 * added norwegian translations (thanks to Espen Moe-Nilssen)
